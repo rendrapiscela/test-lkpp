@@ -4,33 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Data Akses</title>
+    <title>Edit Data</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 </head>
 <body style="background: rgb(56, 52, 52)">
-
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-12">
-            <form method="POST" action="{{ route('logout') }}">
-                @csrf
-
-                <x-dropdown-link :href="route('logout')"
-                        onclick="event.preventDefault();
-                                    this.closest('form').submit();">
-                    {{ __('Log Out') }}
-                </x-dropdown-link>
-            </form>
-            </div>
+    <div class="container mt-5 mb-5">
+    <div class="center px-5 mt-5 py-5 ">
+        <div class="row bg-white py-5">
             <div class="col-md-12">
                 <div class="d-flex justify-content-between">
-                    <h3 class="text-white">Manajemen Akses JDIH</h3>
+                    <h3 class="text-primary">Manajemen Akses JDIH</h3>
+                    <div class="pull-right btn btn-md btn-white">
+                        <!-- Authentication -->
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                    
+                            <x-dropdown-link :href="route('logout')"
+                                    onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                {{ __('Log Out') }}
+                            </x-dropdown-link>
+                        </form>
+                        </div>
+                    
                 </div>
-                <div class="card border-0 shadow-sm rounded">
-                    <div class="card-body">
-                        <table class="table table-bordered">
-                            <thead>
+                <div class="relative overflow-x-auto rounded-lg">
+                    <table class="table table-striped">
+                        <thead class="">
                               <tr>
                                 <th scope="col">Nama</th>
                                 <th scope="col">Email</th>
@@ -85,6 +85,5 @@
             
         @endif
     </script>
-
 </body>
 </html>

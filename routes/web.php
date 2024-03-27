@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 //resource
-Route::resource('akses', AksesController::class);
+Route::resource('akses', AksesController::class)->middleware('auth');
 Route::get('/', function () {
     return redirect('/login');
 });

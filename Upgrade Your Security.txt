@@ -1,0 +1,5 @@
+*Upgrade Your Security*
+- Jika data tersebut bersifat internal, maka wajib menggunakan authentikasi token API.
+- typeId tidak terekspose, dan disarankan menggunakan hashing.
+- Penggunaan limitasi data / pagination di backend, sehingga mudah untuk frontend developer
+- Perlu disesuaikan response callback di backend. contoh pada parameter ditambahkan object "status", "message", untuk mempermudah frontend developer.

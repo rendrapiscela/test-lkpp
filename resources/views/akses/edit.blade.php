@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Edit Data Post - SantriKoding.com</title>
+    <title>Edit Data</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body style="background: rgb(56, 52, 52)">
@@ -50,7 +50,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label class="font-weight-bold">Format Type Bentuk Array : Contoh [1, 2, 3]</label>
+                                <label class="font-weight-bold">Format Type Diisi pisahkan dengan tanda koma, Contoh : 1, 2, 3</label>
                                 <input type="text" class="form-control" name="type" value="{{ old('type', $post->type) }}" placeholder="Type ID">
                             </div>
                            
